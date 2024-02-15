@@ -1,0 +1,9 @@
+grey             rgb(94, 94, 94)
+white            rgb(255, 255, 255)
+blue             rgb(37, 138, 210) 
+
+blackish         rgb(27, 27, 27)
+
+light blue       rgb(173, 216, 230)
+
+very dark blue    rgb(21, 34, 56)

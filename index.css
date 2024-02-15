@@ -1,0 +1,691 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+:root {
+    --primary-color:rgb(255, 255, 255);
+    --secondary-color:rgb(27, 27, 27);
+    --third-color: rgb(37, 138, 210);
+    
+    /* --primary-color: rgb(27, 27, 27 ) ;
+    --secondary-color: rgb(255, 255, 255);
+    --third-color: rgb(21, 34, 56); */
+
+}
+.dark-theme {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    --third-color: rgb(21, 34, 56);
+   
+}
+.dark-theme .header{
+    background-color:var(--secondary-color) ;
+    color: var(--primary-color);
+
+}
+.dark-theme .header {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-family: Montserrat, Montserrat-Fixed, Avenir, "Avenir Next LT Pro", Corbel, 
+    "URW Gothic", source-sans-pro, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+
+
+
+#icon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#icon1 {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    background-color: var(--primary-color);
+    
+    padding-top: 30px;
+    position: fixed ;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    height: 15%;
+    padding-right: 2px;
+    
+    
+}
+
+.header .logo{
+    padding-left: 4em;
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+    font-weight: 900;
+}
+p{
+    word-spacing: 12px;
+}
+
+.header .menu{
+    padding-right: 2px;
+    display: flex;
+    margin-right: 2em;
+    
+
+   
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+    
+}
+.header .menu a{
+    text-decoration: none;
+    color: rgb(37, 138, 210);
+    font-weight: 400;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+   
+   
+}
+.header .menu a:hover{
+    color: black;
+}
+
+.headerimg{
+   border-radius: 10px;
+    display: flex;
+        justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    position: relative;
+    min-width: 100%;
+    
+}
+.overlay{
+width: 100%;
+height: 100vh;
+background: linear-gradient(rgba(0, 0, 0, 0.7),(rgba(0, 0, 0, 0.7)));
+position: absolute;
+top: 0;
+
+}
+
+
+
+
+
+.headerimg img{
+    border-radius: 0px;
+    width: 100%;
+    height: 80vh;
+   
+
+}
+#slideImg {
+    height: 600px;
+    animation: zoom 6s linear infinite;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.2);
+    }
+        15% {
+            transform: scale(1);
+        }
+                85% {
+                    transform: scale(1);
+                }
+                                100% {
+                                    transform: scale(1.2);
+                                }
+}
+
+
+.headerimg p
+{   font-size: 50px;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    font-weight: 800;
+    font-family: comfortaa;
+    margin-left: 10px;
+    color: rgb(248, 0, 0);
+
+}
+
+
+.welcomenote{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.welcomenote h1{
+    font-size: 38px;
+    font-weight: 400;
+}
+
+#contactbtn{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+
+}
+.contactbtn button{
+    min-height: 40px;
+        font-size: 14px;
+        width: 40vw;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        border-style: none;
+        display: inline-flex;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        padding-right: 16px;
+        padding-left: 16px;
+        font-weight: 700;
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        align-items: center;
+        max-width: 100%;
+        position: relative;
+        font-family: "Source Sans Pro", arial, sans-serif;
+        transition: 1s;
+        cursor: pointer;
+    }
+        .contactbtn button:hover{
+    
+   
+        background: transparent;
+      
+        color: rgb(37, 138, 210);
+
+        }
+
+.contactbtn{
+    min-height: 15px;
+        width: auto;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        border-style: none;
+        display: inline-flex;
+        margin-bottom: 0px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(37, 138, 210);
+        padding-right: 16px;
+        padding-left: 16px;
+        font-weight: 700;
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+        justify-content: center;
+        
+        cursor: pointer;
+        align-items: center;
+        max-width: 100%;
+        position: relative;
+        font-family: "Source Sans Pro", arial, sans-serif;
+        transition: 0.5s;
+}
+.contactbtn:hover{
+background: transparent;
+    border: 2px solid rgb(37, 138, 210);
+    color: rgb(37, 138, 210);
+
+}
+
+#contactbtn a{
+     max-height: 40px;
+     background-color: transparent;
+}
+.missionsection{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    gap: 50px;
+    
+}
+
+
+.missionsection .mission h2{
+    margin-bottom: 20px;
+    margin-left: 90px;
+}
+
+.missionsection .Destinations h2 {
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+
+.missionsection .Destinations img{
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+    margin-top: 90px;
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+.missionsection .mission p {
+    font-size: 25px;    
+    line-height: 40px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.missionsection .mission img{
+    height: 300px;
+        width: 300px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        object-fit: cover;
+        margin-left: 50px;
+}
+
+.missionsection .Destinations p {
+    font-size: 25px;
+    line-height: 40px;
+    word-spacing: normal;
+}
+
+.highlitedproduct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.highlitedproduct .forrow{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.highlitedproduct .forrow button{
+    margin-top: 15px;
+}
+
+
+.lowersectionlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lowersectionlogo img{
+    height: 100px;
+    width: 100px;
+}
+
+
+.footer{
+
+    
+
+    
+    margin: 40px 0px 40px 0px;
+    background-color: var(--third-color);
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    
+
+    
+  
+}
+.footer #logo{
+    margin-left: 5px;
+}
+
+
+.footer .container{
+    
+    display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    line-height: 30px;
+    padding: 30px 0 30px 0;
+    font-size: 16px;
+    margin-top: 30px;
+    width: 100%;
+    
+}
+
+#dev{
+    font-size: 14px;
+}
+
+.footer .container span{
+    word-spacing: 5px;
+    
+}
+
+.sociallinks{
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 30px;
+margin: 10px 0px 30px 0px;
+
+}
+
+.shipments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(37, 138, 210);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.shipments img{
+    height: 64px;
+    width: 64px;
+}
+
+.shipments p {
+    line-height: 25px;
+    word-spacing: normal;
+}
+.icon-region{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.icon-region p{
+    color: rgb(255, 255, 255);
+}
+
+
+#services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.productstitle p{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 138, 210);
+    margin-bottom: 60px;
+    margin-top: 30px;
+
+}
+
+.services-card img{
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 15px;
+    flex: 1;
+    object-fit: cover;
+}
+
+.services-card p{
+    height: 150px;
+    width: 250px;
+    word-spacing: normal;
+    word-wrap: break-word;
+    
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.services-card button {
+    min-height: 40px;
+    font-size: 14px;
+    width: auto;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-style: none;
+    display: inline-flex;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 138, 210);
+    padding-right: 16px;
+    padding-left: 16px;
+    font-weight: 700;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+    font-family: "Source Sans Pro", arial, sans-serif;
+    transition: 0.5s;
+    
+}
+.services-card button:hover {
+    background: transparent;
+    border: 2px solid rgb(37, 138, 210);
+    color: rgb(37, 138, 210);
+
+}
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width:767px) {
+   
+
+
+    .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 0px;
+            background-color: var(--primary-color);
+            padding-top: 30px;
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            z-index: 100;
+            background-color: dodgerblue;
+            height: auto;
+            padding-right: 0px;
+            padding-bottom: 20px;
+        }
+.header .logo {
+        padding-left: 1em;
+        font-size: 16px;
+        display: flex;
+        gap: 4px;
+        font-weight: 600;
+    }
+
+        .header .logo img{
+            display: none;
+        }
+
+  ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      gap: 20px;
+     margin-top: 25px;
+     background-color: var(--third-color);
+     list-style: none;
+     display: none;
+     z-index: 1000;
+    
+     
+    
+     
+    
+  }
+  #menuList{
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+
+  }
+
+.header .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    line-height: 2;
+    
+    
+}
+
+
+
+  
+   
+  #icon1 {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      display: block;
+  }
+
+  .headerimg{
+    /* min-height: 80vh; */
+    width: 100vw;
+    margin-top: 80px;
+  }
+  #slideImg{
+    height:60vh ;
+
+  }
+  .headerimg img{
+    height: 30vh;
+  
+  }
+  .headerimg p{
+    font-size: 18px;
+  }
+.welcomenote h1{
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+.icon-region{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.row{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.missionsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+}
+.missionsection .mission p{
+    font-size: 20px;
+}
+.missionsection .Destinations p {
+    font-size: 20px;
+}
+.services-card  {
+    display: flex;
+    flex-direction: column;
+
+}
+ #logo{
+    display: none;
+}
+
+
+
+}
+
+
+
+                            /* Media query for tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+ {
+    .header .menu a {
+            text-decoration: none;
+            color: dodgerblue;
+            font-weight: 400;
+            letter-spacing: 0.125em;
+            text-transform: uppercase;
+        }
+}
+
+
+
+
+
+
+
