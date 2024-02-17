@@ -664,12 +664,21 @@ align-items: center;
     display: none;
 }
 
-.highlitedproduct{
+.highlitedproduct {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     margin-top: 45px;
     margin-bottom: 45px;
+} 
+.highlitedproduct .forrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+     align-items: center; 
+
 }
 
 }
