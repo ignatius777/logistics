@@ -59,6 +59,7 @@ document.body.prepend(box1)
 //Add header logo div
 
 const logo = document.createElement('img')
+logo.className='logo'
 logo.src='img/kata africa logo 1.png'
 
 box1.appendChild(logo)

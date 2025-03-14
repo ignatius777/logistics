@@ -68,7 +68,7 @@ body{
     margin-top: 0px;
     background-color: var(--primary-color);
     
-    padding-top: 30px;
+    padding-top: 10px;
     position: fixed ;
     width: 100%;
     z-index: 100;
@@ -79,12 +79,13 @@ body{
     
 }
 
-.header .logo{
-    padding-left: 4em;
+.headerjs .logo{
+    
     font-size: 30px;
     display: flex;
     gap: 10px;
     font-weight: 900;
+    height: 80px;
 }
 p{
     word-spacing: 12px;
@@ -94,7 +95,7 @@ p{
     
     display: flex;
     margin-right: 2em;
-    
+    align-items: center;
 
    
 }
@@ -127,6 +128,7 @@ ul{
     margin-bottom: 100px;
     position: relative;
     min-width: 100%;
+    
     
 }
 .overlay{
