@@ -75,7 +75,7 @@ function myfunction() {
 //Creating navbar using Js
 const box1 = document.createElement('div')
 
-const att = document.createAttribute('class','headerjs')
+box1.className ='headerjs'
 
 document.body.prepend(box1)
 
