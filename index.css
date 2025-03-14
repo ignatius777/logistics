@@ -61,10 +61,10 @@ body{
 }
 
 
-.header{
+.headerjs{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 0px;
     background-color: var(--primary-color);
     
@@ -90,8 +90,8 @@ p{
     word-spacing: 12px;
 }
 
-.header .menu{
-    padding-right: 2px;
+.headerjs .menu{
+    
     display: flex;
     margin-right: 2em;
     
@@ -106,12 +106,12 @@ ul{
     
     
 }
-.header .menu a{
+.headerjs .menu ul li a{
     text-decoration: none;
     color: rgb(37, 138, 210);
     font-weight: 400;
     letter-spacing: 0.125em;
-    text-transform: uppercase;
+   
    
    
 }
@@ -700,7 +700,9 @@ align-items: center;
 
 
 
-
+#menu{
+    margin-right: 20px;
+}
 
 
 

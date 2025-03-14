@@ -1,25 +1,4 @@
-               /* DARK/ LIGHT MODE */
-
-var icon = document.getElementById("icon");
-
-icon.addEventListener("click", myfunction);
-
-function myfunction() {
-    document.body.classList.toggle("dark-theme");
-
-    // Use a single toggle and store the result in a variable
-    var isDarkTheme = document.body.classList.contains("dark-theme");
-
-    // Update the icon source based on the theme
-    if (isDarkTheme) {
-        icon.src = "img/sun.png";
-    } else {
-        icon.src = "img/moon.png";
-    }
-}
-
-
-                     /* MENU TOGGLE */
+ 
 
 
   var menuList = document.getElementById("menuList");
@@ -74,13 +53,66 @@ function myfunction() {
 
 //Creating navbar using Js
 const box1 = document.createElement('div')
-
+box1.setAttribute("style", "border-bottom: 3px solid grey;")
 box1.className ='headerjs'
-
 document.body.prepend(box1)
+//Add header logo div
 
-//set value to the class
+const logo = document.createElement('img')
+logo.src='img/kata africa logo 1.png'
 
+box1.appendChild(logo)
+
+
+
+
+
+
+
+
+
+// Creating Menu dynamically
+
+
+const menuItems = [
+    { name: "Home", url: "#" },
+    { name: "About", url: "#about" },
+    { name: "Products", url: "#services" },
+    { name: "Contact", url: "#contact" }
+];
+
+const menu1= document.createElement('div')
+menu1.className='menu'
+
+box1.appendChild(menu1)
+
+const menuitem = document.createElement('ul')
+//menuitem.id = "menuList"
+ 
+
+
+ 
+const ul = document.createElement('ul')
+menuitem.id = "menuList"
+
+menu1.appendChild(ul);
+
+
+
+
+menuItems.forEach((menuItems)=> {
+    const li= document.createElement('li')
+    const a = document.createElement('a')
+    
+   
+    a.textContent=menuItems.name
+    a.href =menuItems.url
+
+     li.appendChild(a)
+     
+     
+     ul.appendChild(li)
+});
 
 
 
