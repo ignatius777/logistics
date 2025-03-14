@@ -82,5 +82,9 @@ const att = document.createAttribute('class')
 
 att.value='headerj'
 
-
+document.body
+ //TEST
+const para = document.createElement("p");
+para.innerText = "This is a paragraph";
+document.body.appendChild(para);
 
