@@ -77,14 +77,11 @@ const box1 = document.createElement('div')
  
 document.body.prepend(box1)
 const att = document.createAttribute('class')
+att.value = 'headerjs'
 
 //set value to the class
 
-att.value='headerj'
 
-document.body
- //TEST
-const para = document.createElement("p");
-para.innerText = "This is a paragraph";
-document.body.appendChild(para);
+
+
 
