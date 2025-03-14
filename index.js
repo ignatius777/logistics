@@ -54,6 +54,7 @@
 //Creating navbar using Js
 const box1 = document.createElement('div')
 box1.setAttribute("style", "border-bottom: 3px solid grey;")
+box1.style.backgroundColor='black'
 box1.className ='headerjs'
 document.body.prepend(box1)
 //Add header logo div
