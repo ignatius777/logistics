@@ -72,5 +72,10 @@ function myfunction() {
 
 
 
+//Creating navbar using Js
+const box1 = document.createElement('div')
+ 
+document.body.prepend(box1)
+
 
 
