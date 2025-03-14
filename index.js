@@ -74,10 +74,10 @@ function myfunction() {
 
 //Creating navbar using Js
 const box1 = document.createElement('div')
- 
+
+const att = document.createAttribute('class','headerjs')
+
 document.body.prepend(box1)
-const att = document.createAttribute('class')
-att.value = 'headerjs'
 
 //set value to the class
 
