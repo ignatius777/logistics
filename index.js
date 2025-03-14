@@ -76,6 +76,11 @@ function myfunction() {
 const box1 = document.createElement('div')
  
 document.body.prepend(box1)
+const att = document.createAttribute('class')
+
+//set value to the class
+
+att.value='headerj'
 
 
 
