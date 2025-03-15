@@ -25,7 +25,7 @@
 
 
 
-    var slideImg = document.getElementById("slideImg");
+  /*   var slideImg = document.getElementById("slideImg");
 
     var images =[
         "img/petroleum tanker.jpg",
@@ -47,7 +47,7 @@
 
         setTimeout('slider()', 6000) 
 
-    }
+    } */
 
 
 
@@ -118,4 +118,54 @@ menuItems.forEach((menuItems)=> {
 
 
 
+
+// hero section image
+
+const hero = document.createElement('div')
+
+hero.className='herosec'
+hero.style.height='70vh'
+
+box1.after(hero)
+
+const heroimg= document.createElement('img')
+
+heroimg.style.height='90vh'
+heroimg.style.width='100vw'
+
+heroimg.src='heroswitcher()'
+//heroimg.src='img/Hero 2 js.jpg'
+
+
+
+hero.appendChild(heroimg)
+
+const heroimages =['img/HERO 1.jpg','img/hero f2.jpg']
+let index = 0;
+
+setInterval(function heroswitcher() {
+    index = (index + 1) % heroimages.length;
+    heroimg.src = heroimages[index];
+    
+},2500)
+
+//Text bellow hero images
+
+const weldiv= document.createElement('div')
+weldiv.style.display='flex'
+weldiv.style.justifyContent='center'
+weldiv.style.marginTop='175px'
+
+hero.after(weldiv)
+
+const welcome= document.createElement('p')
+
+welcome.textContent='Welcome to Kata Africa'
+welcome.style.fontFamily="roboto"
+welcome.style.fontWeight='800'
+welcome.style.fontSize='32px'
+welcome.style.color='green'
+
+
+weldiv.appendChild(welcome)
 
