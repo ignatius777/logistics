@@ -169,3 +169,38 @@ welcome.style.color='green'
 
 weldiv.appendChild(welcome)
 
+
+//contact section button 
+
+
+const div1 = document.createElement('div')
+div1.className='contactsec'
+weldiv.after(div1)
+
+//create innerdiv and append to div1
+const div2 = document.createElement('div')
+div2.id='contactbtn'
+
+div1.appendChild(div2)
+
+//3 inner div
+const div3 = document.createElement('div')
+div3.className='contactbtn'
+
+div2.appendChild(div3)
+
+//a tag and attatch it to the 3rd div
+
+const a = document.createElement('a')
+const btnc= document.createElement('button')
+btnc.innerHTML="Contact Us"
+a.appendChild(btnc)
+
+
+a.href='#contact'
+
+div3.appendChild(a)
+
+
+
+
