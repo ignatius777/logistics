@@ -201,6 +201,44 @@ a.href='#contact'
 
 div3.appendChild(a)
 
+// icon region
+
+const div4 = document.createElement('div')
+div4.className='icon-region'
 
 
+div1.after(div4)
+
+/* div5 = document.createElement('div')
+div5.className='shipments'
+const icoimg= document.createElement('img')
+icoimg.src='img/truck.png'
+div5.appendChild(icoimg)
+const iconname=document.createElement('P')
+iconname.textContent='450 shipments annually'
+div5.appendChild(iconname)
+div4.appendChild(div5) */
+
+//create the image dynamically and loop thro
+const icondata = [
+    { img: "img/truck.png", text: "450 shipments annually." },
+    { img: "img/team.png", text: "203 team members." },
+    { img: "img/customer-service.png", text: "More than 700 satisfied clients annually." },
+    { img: "img/location.png", text: "Touching every inch of Africa." }
+];
+
+icondata.forEach(icondata => {
+    div5 = document.createElement('div')
+div5.className='shipments'
+
+const icoimg= document.createElement('img')
+icoimg.src=icondata.img
+div5.appendChild(icoimg)
+
+const iconname=document.createElement('P')
+iconname.textContent=icondata.text
+div5.appendChild(iconname)
+div4.appendChild(div5)
+    
+});
 
