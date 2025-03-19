@@ -242,6 +242,12 @@ background: transparent;
 
 }
 
+/* .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70vw;
+} */
 #contactbtn a{
      max-height: 40px;
      background-color: transparent;
@@ -454,9 +460,11 @@ margin: 10px 0px 30px 0px;
 }
 .row{
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+
 }
 
 
@@ -607,13 +615,13 @@ margin: 10px 0px 30px 0px;
     margin-right: 4px;
 }
 
-.row{
+/* .row{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 
-}
+} */
 .missionsection{
     display: flex;
     flex-direction: column;
@@ -630,8 +638,14 @@ align-items: center;
 .services-card  {
     display: flex;
     flex-direction: column;
+    flex: 1 1 calc(33.33% - 10px); /* 3 columns (subtract gap space) */
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    f
 
-}
+
+    
  #logo{
     display: none;
 }
@@ -674,7 +688,4 @@ align-items: center;
 
 #menu{
     margin-right: 20px;
-}
-
-
-
+}}

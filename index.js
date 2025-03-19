@@ -263,7 +263,7 @@ div6.appendChild(p)
 section.append(div6)
 
                  //Prduct section Data
- let savedData =[
+ let savedData = [
     {
         "id": 1,
         "title": "Mining Services",
@@ -273,13 +273,13 @@ section.append(div6)
     {
         "id": 2,
         "title": "Construction Equipment Rental",
-        "image": "img/construction-equipment.jpg",
+        "image": "img/construction equipment.jpg",
         "description": "Rent well-maintained excavators, graders, rollers, and loaders for all construction and infrastructure projects. Our fleet is regularly serviced to guarantee peak performance and reliability. Whether for short-term or long-term use, we offer flexible rental plans to suit your needs."
     },
     {
         "id": 3,
         "title": "Logistics & Transport Services",
-        "image": "img/tippers-edited.jpg",
+        "image": "img/tippers edited.jpg",
         "description": "Reliable trucks and transportation services for heavy equipment, raw materials, and bulk deliveries. We ensure timely and secure transport with experienced drivers and modern vehicles. Our logistics solutions are tailored to optimize supply chain efficiency and reduce costs."
     },
     {
@@ -291,15 +291,16 @@ section.append(div6)
     {
         "id": 5,
         "title": "EV Battery Swap Stations",
-        "image": "img/ev-battery.jpg",
+        "image": "img/Ev bat.jpg",
         "description": "Convenient battery swap stations for electric bikes, ensuring uninterrupted mobility and eco-friendly transportation. Our stations are strategically located for quick and hassle-free swaps. This service supports the transition to sustainable energy and reduces downtime for EV users."
     },
     {
         "id": 6,
         "title": "Portable Power Bank Rental",
-        "image": "img/powerbank-small.jpg",
+        "image": "img/powerbank small.jpg",
         "description": "Rent portable power banks to keep your devices charged on the go, ideal for events, travel, and emergency use. Our power banks come with fast-charging capabilities and multiple ports for convenience. We offer affordable rental rates and long-lasting battery capacity."
     }
+    
 ]
 
 
@@ -308,20 +309,28 @@ section.append(div6)
 
 //create product card
 const div7= document.createElement('div')
-div7.className=('row')
+    div7.className=('row')
+    
+
+ //Loop thru the array
+
+ savedData.forEach((savedData) => {
+    
+    
+    
+    const div8 = document.createElement('div')
+    div8.className='services-card'
+
+    const ptitle= document.createElement('h5')
+    ptitle.textContent= savedData.title
+
+        const pimg=document.createElement('img')
+        pimg.src= savedData.image
+
+    const pdesc= document.createElement('p')
+    pdesc.textContent=savedData.description.slice(0,90) +'....'
 
 
-const div8 = document.createElement('div')
-div8.className='services-card'
-
-const ptitle= document.createElement('h5')
-ptitle.textContent= savedData[0].title
-
-const pimg=document.createElement('img')
-pimg.src='img/Coal-small.jpg'
-
-const pdesc= document.createElement('p')
-pdesc.textContent=savedData[0].description
 
 
 
@@ -337,3 +346,8 @@ div7.appendChild(div8)
 
 
 section.append(div7)
+
+
+ });
+
+ 
