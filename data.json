@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Mining",
+        "image": "img/Coal-small.jpg",
+        "description": "we have a fleet of well maintained fork lifts, cranes, motor grader, road roller machine, excavator, wheel loader"
+    },
+    {
+        "title": "Machine for Hire",
+        "image": "img/construction equipment.jpg",
+        "description": "we have a fleet of well maintained fork lifts, cranes, motor grader, road roller machine, excavator, wheel loader"
+    },
+    {
+        "title": "Logistics & trucks for hire",
+        "image": "img/tippers edited.jpg",
+        "description": "we have a fleet of well maintained fork lifts, cranes, motor grader, road roller machine, excavator, just to check what next then"
+    },
+    {
+        "title": "Cranes/fork lift for hire",
+        "image": "img/Forklift.jpg",
+        "description": "we have a fleet of well maintained fork lifts, cranes, motor grader, road roller machine, excavator, wheel loader"
+    },
+    {
+        "title": "Ev Battery swap stations",
+        "image": "img/Ev bat.jpg",
+        "description": "we provide swap stations for rechargeable battery used to power the electric motors of a battery electric bikes. (HEV)."
+    },
+    {
+        "title": "Power bank for Hire",
+        "image": "img/powerbank small.jpg",
+        "description": "we have a fleet of well maintained fork lifts, cranes, motor grader, road roller machine, excavator, wheel loader"
+    }
+]
