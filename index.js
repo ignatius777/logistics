@@ -242,3 +242,98 @@ div4.appendChild(div5)
     
 });
 
+
+// PRODUCTS AND SERVICES SECTION
+const section = document.createElement('section')
+section.id='services'
+
+
+
+div4.after(section)
+
+//section tittle
+
+const div6=document.createElement('div')
+div6.className='productstitle'
+
+const p=document.createElement('p')
+p.textContent='Products and Services'
+div6.appendChild(p)
+
+section.append(div6)
+
+                 //Prduct section Data
+ let savedData =[
+    {
+        "id": 1,
+        "title": "Mining Services",
+        "image": "img/coal-small.jpg",
+        "description": "We provide efficient mining solutions, including excavation, material transport, and site management with advanced machinery. Our team ensures compliance with safety regulations and environmental standards. From coal to minerals, we optimize extraction processes for maximum efficiency."
+    },
+    {
+        "id": 2,
+        "title": "Construction Equipment Rental",
+        "image": "img/construction-equipment.jpg",
+        "description": "Rent well-maintained excavators, graders, rollers, and loaders for all construction and infrastructure projects. Our fleet is regularly serviced to guarantee peak performance and reliability. Whether for short-term or long-term use, we offer flexible rental plans to suit your needs."
+    },
+    {
+        "id": 3,
+        "title": "Logistics & Transport Services",
+        "image": "img/tippers-edited.jpg",
+        "description": "Reliable trucks and transportation services for heavy equipment, raw materials, and bulk deliveries. We ensure timely and secure transport with experienced drivers and modern vehicles. Our logistics solutions are tailored to optimize supply chain efficiency and reduce costs."
+    },
+    {
+        "id": 4,
+        "title": "Crane & Forklift Rental",
+        "image": "img/forklift.jpg",
+        "description": "Offering forklifts and cranes for safe and efficient lifting, loading, and material handling in industrial and construction sites. Our equipment is designed to handle various load capacities, ensuring smooth operations. We also provide trained operators to enhance productivity and safety."
+    },
+    {
+        "id": 5,
+        "title": "EV Battery Swap Stations",
+        "image": "img/ev-battery.jpg",
+        "description": "Convenient battery swap stations for electric bikes, ensuring uninterrupted mobility and eco-friendly transportation. Our stations are strategically located for quick and hassle-free swaps. This service supports the transition to sustainable energy and reduces downtime for EV users."
+    },
+    {
+        "id": 6,
+        "title": "Portable Power Bank Rental",
+        "image": "img/powerbank-small.jpg",
+        "description": "Rent portable power banks to keep your devices charged on the go, ideal for events, travel, and emergency use. Our power banks come with fast-charging capabilities and multiple ports for convenience. We offer affordable rental rates and long-lasting battery capacity."
+    }
+]
+
+
+
+
+
+//create product card
+const div7= document.createElement('div')
+div7.className=('row')
+
+
+const div8 = document.createElement('div')
+div8.className='services-card'
+
+const ptitle= document.createElement('h5')
+ptitle.textContent= savedData[0].title
+
+const pimg=document.createElement('img')
+pimg.src='img/Coal-small.jpg'
+
+const pdesc= document.createElement('p')
+pdesc.textContent=savedData[0].description
+
+
+
+const pbtn=document.createElement('button')
+pbtn.textContent='See more'
+
+div8.appendChild(ptitle)
+div8.appendChild(pimg)
+div8.appendChild(pdesc)
+div8.appendChild(pbtn)
+
+div7.appendChild(div8)
+
+
+section.append(div7)
