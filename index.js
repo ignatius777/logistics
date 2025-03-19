@@ -331,11 +331,25 @@ const div7= document.createElement('div')
     pdesc.textContent=savedData.description.slice(0,90) +'....'
 
 
-
-
-
+    
 const pbtn=document.createElement('button')
 pbtn.textContent='See more'
+
+     pbtn.addEventListener('click', ()=>{
+         
+        if (pdesc.textContent===savedData.description.slice(0,90) +'....' && pbtn.textContent==='See more') 
+            {
+            pdesc.textContent=savedData.description.slice(0,125)
+            pbtn.textContent='See less'
+        } 
+        else {
+            pdesc.textContent=savedData.description.slice(0,90)+'....' 
+            pbtn.textContent='See more'
+        }
+
+     })
+
+
 
 div8.appendChild(ptitle)
 div8.appendChild(pimg)
@@ -350,4 +364,9 @@ section.append(div7)
 
  });
 
+
+
  
+
+ 
+      
