@@ -242,12 +242,7 @@ background: transparent;
 
 }
 
-/* .row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 70vw;
-} */
+
 #contactbtn a{
      max-height: 40px;
      background-color: transparent;
@@ -615,13 +610,6 @@ margin: 10px 0px 30px 0px;
     margin-right: 4px;
 }
 
-/* .row{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-} */
 .missionsection{
     display: flex;
     flex-direction: column;
