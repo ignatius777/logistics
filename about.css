@@ -1,0 +1,16 @@
+
+#about{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 60%;
+    margin: 1in auto;
+    
+}
+
+.innerdiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}

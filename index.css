@@ -247,96 +247,11 @@ background: transparent;
      max-height: 40px;
      background-color: transparent;
 }
-.missionsection{
-    display: flex;
-    justify-content: center;
-    margin-top: 90px;
-    margin-bottom: 70px;
-    gap: 50px;
-    
-}
-
-
-.missionsection .mission h2{
-    margin-bottom: 20px;
-    margin-left: 90px;
-}
-
-.missionsection .Destinations h2 {
-    margin-bottom: 15px;
-    margin-left: 80px;
-}
-
-.missionsection .Destinations img{
-    height: 300px;
-    width: 300px;
-    border-radius: 25px;
-    margin-top: 90px;
-    object-fit: cover;
-    margin-left: 40px;
-}
-
-.missionsection .mission p {
-    font-size: 25px;    
-    line-height: 40px;
-    letter-spacing: normal;
-    word-spacing: normal;
-}
-
-.missionsection .mission img{
-    height: 500px;
-        width: 500px;
-        border-radius: 25px;
-        margin-bottom: 20px;
-        object-fit: cover;
-        margin-left: 50px;
-}
-
-.missionsection .Destinations p {
-    font-size: 25px;
-    line-height: 40px;
-    word-spacing: normal;
-}
-
-.highlitedproduct{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 45px;
-    margin-bottom: 45px;
-}
-.highlitedproduct .forrow{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center;
-
-}
-
-.highlitedproduct .forrow button{
-    margin-top: 15px;
-}
-
-
-.lowersectionlogo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.lowersectionlogo img{
-    height: 100px;
-    width: 100px;
-}
 
 
 .footer{
 
-    
-
-    
-    margin: 40px 0px 40px 0px;
+    margin: 10px 0px 40px 0px;
     background-color: var(--third-color);
     min-height: 40vh;
     display: flex;
@@ -610,19 +525,7 @@ margin: 10px 0px 30px 0px;
     margin-right: 4px;
 }
 
-.missionsection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 8px;
-}
-.missionsection .mission p{
-    font-size: 20px;
-}
-.missionsection .Destinations p {
-    font-size: 20px;
-}
+
 .services-card  {
     display: flex;
     flex-direction: column;

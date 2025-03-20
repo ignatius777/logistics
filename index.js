@@ -365,7 +365,69 @@ section.append(div7)
  });
 
 
+                              // ABOUT SECTION
+     
+     const aboutsec = document.createElement('section') //section        
+     aboutsec.id='about'
+     
 
+
+     const abouttitle = document.createElement('h3')
+     abouttitle.textContent='About Us'
+     
+  
+
+
+    const aboutdiv= document.createElement('div')  //inner div that will make them 2
+    aboutdiv.className='innerdiv'
+
+    const subtitle = document.createElement('h5')
+    subtitle.className='subtitle'
+    subtitle.textContent='Who we are.'
+
+    aboutdiv.appendChild(subtitle)
+
+     const inpara= document.createElement('p')
+     inpara.innerHTML='We are a trusted logistics partner,delivering seamless and efficient transportation solutions. With a focus on reliability and speed, we help businesses move goods effortlessly across regions.'
+     inpara.style.marginTop='15px'
+
+    aboutdiv.appendChild(inpara)
+
+
+     //aboutsec.appendChild(abouttitle)
+     aboutsec.appendChild(aboutdiv) // attatch to about section
+     
+    
+     section.after(aboutsec)
+
+
+     // 2nd div
+
+const aboutdiv2= document.createElement('div')  //inner div that will make them 2
+    aboutdiv2.className='innerdiv'
+    
+
+    const subtitle2 = document.createElement('h5')
+    subtitle2.className='subtitle'
+    subtitle2.textContent='Our Mission.'
+
+    aboutdiv2.appendChild(subtitle2)
+
+     const inpara2= document.createElement('p')
+     inpara2.innerHTML='To provide fast, secure, and cost-effective logistics services that keep supply chains running smoothly.'
+     inpara2.style.marginTop='15px'
+
+
+    aboutdiv2.appendChild(inpara2)
+    
+    
+     
+     aboutsec.appendChild(aboutdiv2) // attatch to about section
+     
+    
+     section.after(aboutsec)
+
+     
  
 
  
