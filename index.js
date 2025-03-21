@@ -1,24 +1,7 @@
  
 
 
-  var menuList = document.getElementById("menuList");
-    var icon1 = document.getElementById("icon1");
-
-
-    function toggleMenu() {
   
-  
-       if (menuList.style.display === "none") {
-            menuList.style.display = "block";
-        } else {
-            menuList.style.display = "none";
-        }
-    }
-
-    // Add event listener to the button
-    icon1.addEventListener("click", toggleMenu);
-
-
 
                      /*  HERO SECTION SLIDER  */
 
@@ -165,6 +148,8 @@ welcome.style.fontFamily="roboto"
 welcome.style.fontWeight='800'
 welcome.style.fontSize='32px'
 welcome.style.color='green'
+welcome.style.marginTop='1in'
+welcome.style.marginBottom='0.5in'
 
 
 weldiv.appendChild(welcome)
@@ -430,5 +415,25 @@ const aboutdiv2= document.createElement('div')  //inner div that will make them 
      
  
 
- 
+     // FOOTER REGION
+
+     const divfooter = document.createElement('div')
+     divfooter.className='footer'
+
+
+     aboutsec.after(divfooter) // append after about section
+
+     const innerfooter = document.createElement('div')
+     innerfooter.className='container'
+
+     divfooter.appendChild(innerfooter)
+
+     const par1 =document.createElement('p')
+      par1.innerHTML='Call Us 0700-000-000 <br>Head Office: Dul Dul Phase 2, Nairobi Kenya,<br> Copyright © 2012-2024 Kata Africa - All Rights Reserved'
+      innerfooter.appendChild(par1)
+
+
+
+
+
       
