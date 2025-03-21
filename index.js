@@ -127,7 +127,7 @@ const heroimages =['img/HERO 1.jpg','img/hero f2.jpg']
 let index = 0;
 
 setInterval(function heroswitcher() {
-    index = (index + 1) % heroimages.length;
+    index = (index + 1) % heroimages.length; // the remainder % ensures the loop starts onnce the last item is reacheched creating a circular loop
     heroimg.src = heroimages[index];
     
 },2500)
