@@ -278,7 +278,7 @@ section.append(div6)
     {
         "id": 1,
         "title": "Mining Services",
-        "image": "img/coal-small.jpg",
+        "image": "img/Coal-small.jpg",
         "description": "We provide efficient mining solutions, including excavation, material transport, and site management with advanced machinery. Our team ensures compliance with safety regulations and environmental standards. From coal to minerals, we optimize extraction processes for maximum efficiency."
     },
     {
@@ -296,7 +296,7 @@ section.append(div6)
     {
         "id": 4,
         "title": "Crane & Forklift Rental",
-        "image": "img/forklift.jpg",
+        "image": "img/Forklift.jpg",
         "description": "Offering forklifts and cranes for safe and efficient lifting, loading, and material handling in industrial and construction sites. Our equipment is designed to handle various load capacities, ensuring smooth operations. We also provide trained operators to enhance productivity and safety."
     },
     {
