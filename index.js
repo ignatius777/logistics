@@ -99,7 +99,33 @@ menuItems.forEach((menuItems)=> {
      ul.appendChild(li)
 });
 
+ // Greating Display
 
+ const timediv = document.createElement('div')
+ timediv.className='timediv'
+
+ box1.appendChild(timediv)
+
+// greeting function
+ let dtime = new Date()
+ let hours = dtime.getHours();
+ 
+ let greeting = document.createElement('p')
+ greeting.style.color='white'
+
+ 
+ timediv.appendChild(greeting)
+
+     if (hours >= 5 && hours <12) {
+
+        greeting.textContent='Good Morning ☀️'
+       
+        
+     } else if (hours >= 12 && hours <18){
+         greeting.textContent='Good Afternoon ☀️'
+     } else {
+        greeting.textContent='Good Evening 🌙'
+     } 
 
 
 // hero section image
