@@ -120,7 +120,6 @@ menuItems.forEach((menuItems)=> {
 
         greeting.textContent='Good Morning ☀️'
        
-        
      } else if (hours >= 12 && hours <18){
          greeting.textContent='Good Afternoon ☀️'
      } else {
@@ -278,7 +277,7 @@ section.append(div6)
     {
         "id": 1,
         "title": "Mining Services",
-        "image": "img/Coal-small.jpg",
+        "image": "img/coal-small.jpg",
         "description": "We provide efficient mining solutions, including excavation, material transport, and site management with advanced machinery. Our team ensures compliance with safety regulations and environmental standards. From coal to minerals, we optimize extraction processes for maximum efficiency."
     },
     {
@@ -296,7 +295,7 @@ section.append(div6)
     {
         "id": 4,
         "title": "Crane & Forklift Rental",
-        "image": "img/Forklift.jpg",
+        "image": "img/forklift.jpg",
         "description": "Offering forklifts and cranes for safe and efficient lifting, loading, and material handling in industrial and construction sites. Our equipment is designed to handle various load capacities, ensuring smooth operations. We also provide trained operators to enhance productivity and safety."
     },
     {
@@ -457,6 +456,132 @@ const aboutdiv2= document.createElement('div')  //inner div that will make them 
      const par1 =document.createElement('p')
       par1.innerHTML='Call Us 0700-000-000 <br>Head Office: Dul Dul Phase 2, Nairobi Kenya,<br> Copyright © 2012-2024 Kata Africa - All Rights Reserved'
       innerfooter.appendChild(par1)
+
+
+
+      //contact form section
+
+      const contactForm= document.createElement('section')
+      contactForm.className='contact-form'
+      contactForm.style.marginBottom='0.5in'
+      
+
+
+
+        const contactHeading = document.createElement('h3')
+        contactHeading.textContent='Send Us a Message'
+        
+        contactForm.appendChild(contactHeading)
+           const formField =document.createElement('form')
+           formField.id='contactForm'
+           
+             
+             const formGroup = document.createElement('div')
+             formGroup.className='form-group'
+             formGroup.style.margin='4px'
+             
+             const label = document.createElement('label')
+             label.textContent='Name :'
+             label.style.margin='4px'
+                const nameInput =document.createElement('input')
+                nameInput.type='text'
+                nameInput.required='true'
+                nameInput.style.margin='3px'
+
+                const labelEmail = document.createElement('label')
+             labelEmail.textContent='Name :'
+             labelEmail.style.margin='4px'
+                const nameEmail =document.createElement('input')
+                nameInput.type='email'
+                nameInput.required='true'
+                nameInput.style.margin='3px'
+                nameInput.placeholder='First Name'
+
+                
+
+                formGroup.appendChild(label)
+                label.after(nameInput)
+
+                // second field
+                const formGroup2 = document.createElement('div')
+                formGroup2.className='form-group'
+                
+                const label2 = document.createElement('label')
+                label2.textContent='Email :'
+                label2.style.margin='4px'
+                   const nameInput2 =document.createElement('input')
+                   nameInput2.type='email'
+                   nameInput2.required='true'
+                   nameInput2.style.margin='3px'
+                   nameInput2.placeholder='Enter a valid email address'
+   
+                   
+                   
+   
+                   formGroup2.appendChild(label2)
+                   label2.after(nameInput2)
+
+                   //3rd field text area
+                   const formGroup3 = document.createElement('div')
+                formGroup3.className='form-group'
+                
+                const label3 = document.createElement('label')
+                label3.textContent='Message:'
+                label3.style.margin='3px'
+                   const textArea =document.createElement('textarea')
+                   textArea.rows='4'
+                   textArea.required='true'
+                   textArea.style.margin='3px'
+                   textArea.placeholder='Enter your message here...'
+        
+                     
+                
+     
+                   formGroup3.appendChild(label3)
+                   label3.after(textArea)
+
+                    // phone number
+                   const formGroup4 = document.createElement('div')
+                formGroup4.className='form-group'
+                
+                const phone = document.createElement('label')
+                phone.textContent='Mobile :'
+                phone.style.margin='4px'
+                   const phoneInput =document.createElement('input')
+                   phoneInput.type='tel'
+                   phoneInput.required='true'
+                   phoneInput.style.margin='3px'
+                   phoneInput.placeholder='Please enter your phone number'
+   
+                   
+                   
+   
+                   formGroup4.appendChild(phone)
+                   phone.after(phoneInput)
+
+             const submitButton = document.createElement('button')
+             submitButton.type='submit'
+             submitButton.textContent='Send Message'
+
+
+
+             formField.appendChild(formGroup)
+             formField.appendChild(formGroup2)
+             formField.appendChild(formGroup4)
+             formField.appendChild(formGroup3)
+             formField.appendChild(submitButton)
+
+
+                 
+
+                
+
+
+
+           contactForm.appendChild(formField) 
+  
+      aboutsec.after(contactForm)
+
 
 
 
